@@ -9,5 +9,5 @@ def is_unique(str):
 		char_set[ascii_char]=True
 	return True
 
-str_user=input("Enter the string you want to check: ")
+str_user = input("Enter the string you want to check: ")
 print(is_unique(str_user))
