@@ -9,4 +9,5 @@ def is_unique(str):
 		char_set[ascii_char]=True
 	return True
 
-print(is_unique("priyapp"))
+str_user=input("Enter the string you want to check: ")
+print(is_unique(str_user))
