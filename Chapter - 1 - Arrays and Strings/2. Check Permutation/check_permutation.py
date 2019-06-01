@@ -27,7 +27,6 @@ def check_permutation_count(str1,str2):
 			return False
 	return True
 
-
 str1=input("Enter First String: ")
 str2=input("Enter Second String: ")
 print(check_permutation_sort(str1,str2))
