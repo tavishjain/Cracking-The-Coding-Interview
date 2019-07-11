@@ -51,16 +51,6 @@
 		}
 	}
 	
-	void deleteMiddleNode(Node* node){
-		if(node == NULL || node->next == NULL){
-			cout << "Not possible";
-		}else {
-			node->data = node->next->data;
-			node->next = node->next->next;
-			cout << "Deleted the node" << endl;
-		}
-	}
-	
 	void sumLists(Node* head1, Node* head2){
 		Node* temp1 = head1;
 		Node* temp2 = head2;
