@@ -48,20 +48,7 @@ void printList(Node* head){
 	}
 }
 
-int main() {
-	//Number of nodes in the linked list
-	int n;
-	cin >> n;
-	Node* head = NULL;
-	for(int i = 0 ; i < n ; i++){
-		int x;
-		cin >> x;
-		head = pushToLast(head, x);
-	}
-	cout << "Old list was : ";
-	printList(head);
-	cout << endl;
-	
+void RemoveDups(Node *head){
 	bool vis[10000];
 	for(int i = 0 ; i < 10000 ; i++) vis[i] = false;
 	
@@ -76,8 +63,25 @@ int main() {
 		}
 		temp = temp->next;
 	}
-	cout << "New list after removal of duplicates is ";
+	cout << "New list after removal of duplicates is : ";
 	printList(ans);
+}
+
+int main() {
+	//Number of nodes in the linked list
+	int n;
+	cin >> n;
+	Node* head = NULL;
+	for(int i = 0 ; i < n ; i++){
+		int x;
+		cin >> x;
+		head = pushToLast(head, x);
+	}
+	cout << "Old list was : ";
+	printList(head);
+	cout << endl;
+	
+	RemoveDups(head);
 	
 	return 0;
 }
