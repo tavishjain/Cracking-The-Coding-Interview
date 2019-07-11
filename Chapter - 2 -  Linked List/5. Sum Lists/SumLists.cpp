@@ -8,7 +8,7 @@
 			data = x;
 			next = NULL;
 		}
-	};
+	}; 
 	
 	Node* pushToLast(Node* head, int data){
 		Node* node = new Node(data);
