@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
-
+//check Permutation Combination By Sorting
 public class Main {
 
     public static void checkPermutationBySorting(String str1, String str2){
