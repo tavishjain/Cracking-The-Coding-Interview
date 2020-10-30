@@ -1,5 +1,5 @@
-#include <cstdint>
-#include <iostream>
+#include <bits/stdc++.h>
+
 #include "bitutils.hpp"
 
 int32_t insertion(int32_t N, int32_t M, int i, int j)
